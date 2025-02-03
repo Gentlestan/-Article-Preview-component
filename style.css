@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ecf2f8;
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.img__container,
+.text__container {
+  margin: 0 auto;
+}
+section,
+.profile__container,
+.hero__img {
+  width: 100%;
+  max-width: 327px;
+}
+.text__container,
+.profile__container {
+  background: #fff;
+}
+.hero__text {
+  padding: 1em 1em;
+}
+.hero__headline {
+  font-size: 1.25rem;
+  letter-spacing: 0.25px;
+}
+.hero__headline,
+.profile__author-name {
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.hero__intro,
+.profile__author-date {
+  font-weight: medium;
+  line-height: 1.3;
+  font-size: 0.8125rem;
+  letter-spacing: 0.12%;
+}
+.profile__section {
+  display: flex;
+  align-items: center;
+}
+.profile__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.profile__author-info {
+  padding-left: 1em;
+}
+.profile__author-name {
+  font-size: 0.8125rem;
+  letter-spacing: 0.12%;
+}
+
+.profile__section {
+  padding-left: 0.5em;
+}
+
+.share {
+  align-self: center;
+}
+.profile__icon-space {
+  margin: 0 auto;
+}
+.profile__icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #979797;
+}
+.social__media-icons {
+  color: white;
+  background: #6e8098;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+.social__icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  margin-left: 1em;
+}
+
+.social__media-share {
+  margin: 0 auto;
+}
+
+@media (min-width: 412px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 608px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 0;
+  }
+  .hero__img,
+  .text__container {
+    height: 346px;
+  }
+  .img__container {
+    width: 40%;
+  }
+  .text__container {
+    width: 60%;
+  }
+  .img__container,
+  .text__container {
+    margin: 0;
+  }
+  .hero__intro {
+    margin-bottom: 1em;
+  }
+  .social__media-share {
+    display: none;
+  }
+  .social__media-icons {
+    display: none;
+    position: absolute;
+    justify-content: space-around;
+    top: -38px;
+    right: -52px;
+    z-index: 10;
+    width: 60%;
+    padding: 0.5em;
+    border-radius: 1em;
+  }
+  .social__media-icons::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Adjust the distance below the container */
+    left: 34%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #6e8098; /* Same color as the background */
+  }
+  .social__icons {
+    justify-content: space-around;
+    width: 60%;
+  }
+  .profile__container {
+    position: relative; /* This makes it a positioned container for absolute children */
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    width: 100%;
+    max-width: 730px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  .hero__img,
+  .text__container {
+    height: 346px;
+  }
+  .hero__intro {
+    margin-bottom: 2em;
+  }
+  .img__container {
+    width: 40%;
+  }
+  .text__container {
+    width: 60%;
+  }
+  .img__container,
+  .text__container {
+    margin: 0;
+  }
+
+  .social__media-share {
+    display: none;
+  }
+  .social__media-icons {
+    display: none;
+    position: absolute;
+    justify-content: space-around;
+    top: -60px;
+    right: -50px;
+    z-index: 10;
+    width: 60%;
+    padding: 0.5em;
+    border-radius: 1em;
+  }
+  .social__media-icons::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Adjust the distance below the container */
+    left: 36%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #6e8098; /* Same color as the background */
+  }
+  .social__icons {
+    justify-content: space-around;
+    width: 60%;
+  }
+  .profile__container {
+    position: relative; /* This makes it a positioned container for absolute children */
+  }
+}

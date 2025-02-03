@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Article Preview Component</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="img__container">
+        <img
+          src="images/drawers.jpg"
+          alt="A drawer with a delicate flower placed on top, accompanied by a few cards scattered nearby"
+          class="hero__img"
+        />
+      </section>
+
+      <section class="text__container">
+        <p class="hero__headline hero__text">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </p>
+        <p class="hero__intro hero__text">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+
+        <div class="profile__container">
+          <div class="profile__section" id="profile__section">
+            <img
+              src="images/avatar-michelle.jpg"
+              alt="portrait of michelle"
+              class="profile__img"
+            />
+            <div class="profile__author-info">
+              <p class="profile__author-name">Michelle Appleton</p>
+              <p class="profile__author-date">28 jun 2020</p>
+            </div>
+            <div class="profile__icon-space profile__icon-bg">
+              <img
+                src="images/icon-share.svg"
+                alt="share icon"
+                class="share shared"
+                id="share"
+              />
+            </div>
+          </div>
+          <!--social media icons initially hidden-->
+          <div class="social__media-icons" id="social__media-icons">
+            <p class="social__media-text">SHARE</p>
+            <div class="social__icons">
+              <img
+                src="images/icon-facebook.svg"
+                alt="facebbok"
+                width="30px"
+                height="30px"
+              />
+              <img src="images/icon-twitter.svg" alt="twitter" />
+              <img src="images/icon-pinterest.svg" alt="pinterest" />
+            </div>
+            <div class="social__media-share profile__icon-bg">
+              <img
+                src="images/icon-share.svg"
+                alt="share icon"
+                class="share shared"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
