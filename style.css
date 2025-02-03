@@ -22,12 +22,19 @@ body {
 .text__container {
   margin: 0 auto;
 }
+
+.hero__img {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
 section,
 .profile__container,
 .hero__img {
   width: 100%;
   max-width: 327px;
 }
+
 .text__container,
 .profile__container {
   background: #fff;
@@ -134,6 +141,10 @@ section,
   .text__container {
     margin: 0;
   }
+  .hero__img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
   .hero__intro {
     margin-bottom: 1em;
   }
@@ -192,6 +203,10 @@ section,
   }
   .img__container {
     width: 40%;
+  }
+  .hero__img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
   .text__container {
     width: 60%;
